@@ -4,4 +4,4 @@
 Project page with superhero Marvel films used HTML/CSS/JavaScript/Bootstrap
 
 <h2> Superhero-tests </h2>
-Sutomation tests for Superhero project use Protractor/JavaScript 
+Automation tests for Superhero project use Protractor/JavaScript 
