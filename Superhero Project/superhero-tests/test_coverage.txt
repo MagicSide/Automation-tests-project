@@ -1,0 +1,28 @@
+
+---------------------------
+Automation tests coverage
+---------------------------
+
+1. Login form
+    √  display all Login page elements
+    √  display error message when no username and password entered
+    √  display error message when no password entered
+    √  display error message when no email entered
+    √  log user in
+
+2. Vote page
+    √  display all default roster elements
+    √  add a hero on submit
+
+3. Roster page
+    √  display all elements for voting section
+    √  add 1 to X-man votes
+    √  add 1 to Avenger votes
+    √  add 1 to DeadPool votes
+    √  add 1 to Spider-Man votes
+    √  add 1 to Iron Man votes
+
+4. Header page
+    √ Should contain all Header elements
+    √ should display alert for not found
+    √ Search elements and alert for found
