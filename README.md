@@ -1,5 +1,4 @@
 # Automation-tests-project
-Project web-page with HTML/CSS/JavaScript and Automation tests with Protractor/JavaScript
 
 <h2> Superhero </h2> 
 Project page with superhero Marvel films used HTML/CSS/JavaScript/Bootstrap
