@@ -27,37 +27,37 @@ describe('Header Page', function () {
 
     it('Should contain all Header elements', function () {
 
-        loginPage.emailFld.sendKeys('tester@test.com')
-        loginPage.passwordFld.sendKeys('password')
-        loginPage.submitBtn.click()
+        loginPage.emailFld.sendKeys('tester@test.com');
+        loginPage.passwordFld.sendKeys('password');
+        loginPage.submitBtn.click();
 
         
         expect(headerPage.headerTitle.isDisplayed()).toBe(true);
-        expect(headerPage.headerTitle.getText()).toEqual('Superhero Roster')
+        expect(headerPage.headerTitle.getText()).toEqual('Superhero Roster');
         
-        expect(headerPage.headerImage.isDisplayed()).toBe(true)
+        expect(headerPage.headerImage.isDisplayed()).toBe(true);
 
-        expect(headerPage.headerBody.isDisplayed()).toBe(true)
+        expect(headerPage.headerBody.isDisplayed()).toBe(true);
         expect(headerPage.headerBody.getText()).toEqual(
         'Imagine That you are tasked with building a team of SuperHeros of save the world. We have given you a few heroes to start with. Add as many heroes as you would like to round out your dream team')
-    })
+    });
 
 
 
     it('should display alert for not found', function () {
-        loginPage.emailFld.sendKeys('tter@glitm.com')
-        loginPage.passwordFld.sendKeys('fakepassword')
-        loginPage.rememberChk.click()
-        loginPage.submitBtn.click()
+        loginPage.emailFld.sendKeys('tter@glitm.com');
+        loginPage.passwordFld.sendKeys('fakepassword');
+        loginPage.rememberChk.click();
+        loginPage.submitBtn.click();
 
-        headerPage.searchFld.sendKeys('Bob')
-        headerPage.searchBtn.click()
+        headerPage.searchFld.sendKeys('Bob');
+        headerPage.searchBtn.click();
 
         var EC = protractor.ExpectedConditions
-        browser.wait(EC.alertIsPresent(), 3000)
+        browser.wait(EC.alertIsPresent(), 3000);
 
         expect(browser.switchTo().alert().getText()).toEqual('Your search for Bob returned 0 result. Try something else.')
-        browser.switchTo().alert().accept()
+        browser.switchTo().alert().accept();
     })
 
     
