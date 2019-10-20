@@ -34,7 +34,7 @@ webdriver-manager start
 <h3> Start tests </h3>
 <pre>
 1. Open console
-2. Enter path folder name "SuperHero-tests"
+2. Enter path to folder "SuperHero-tests"
 3. Enter protractor conf.js
 After that tests will be run
 </pre>
