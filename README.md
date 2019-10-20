@@ -12,6 +12,7 @@ Used Xpath and CSS selectors for find elements
 Add Jasmine reports with screenshots </pre>
 
 
+
 <h2> Tutorial for tests </h2>
 
 <h3> Pre-conditions for tests </h3>
