@@ -25,19 +25,20 @@ fdescribe('Header Page', function () {
     })
 
 
-    it('Should contain all Header elements', async function () {
+    it('Should contain all Header elements', function () {
 
-       await loginPage.emailFld.sendKeys('tester@test.com')
-       await loginPage.passwordFld.sendKeys('password')
-       await loginPage.submitBtn.click()
+        loginPage.emailFld.sendKeys('tester@test.com')
+        loginPage.passwordFld.sendKeys('password')
+        loginPage.submitBtn.click()
 
-       await expect(headerPage.headerTitle.isDisplayed()).toBe(true)
-       await expect(headerPage.headerTitle.getText()).toEqual('Superhero Roster')
+        
+        expect(headerPage.headerTitle.isDisplayed()).toBe(true);
+        expect(headerPage.headerTitle.getText()).toEqual('Superhero Roster')
+        
+        expect(headerPage.headerImage.isDisplayed()).toBe(true)
 
-       await expect(headerPage.headerImage.isDisplayed()).toBe(true)
-
-       await expect(headerPage.headerBody.isDisplayed()).toBe(true)
-       await expect(headerPage.headerBody.getText()).toEqual(
+        expect(headerPage.headerBody.isDisplayed()).toBe(true)
+        expect(headerPage.headerBody.getText()).toEqual(
         'Imagine That you are tasked with building a team of SuperHeros of save the world. We have given you a few heroes to start with. Add as many heroes as you would like to round out your dream team')
     })
 
