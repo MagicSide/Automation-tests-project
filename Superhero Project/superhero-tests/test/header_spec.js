@@ -2,7 +2,7 @@
 var Header_Search_Page = require('../page-objects/header_page')
 var LoginPage = require('../page-objects/login_page')
 
-fdescribe('Header Page', function () {
+describe('Header Page', function () {
 
     var headerPage
 
