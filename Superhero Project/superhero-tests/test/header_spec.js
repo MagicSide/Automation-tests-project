@@ -2,7 +2,7 @@
 var Header_Search_Page = require('../page-objects/header_page')
 var LoginPage = require('../page-objects/login_page')
 
-describe('Header Page', function () {
+fdescribe('Header Page', function () {
 
     var headerPage
 
@@ -25,19 +25,19 @@ describe('Header Page', function () {
     })
 
 
-    it('Should contain all Header elements', function () {
+    it('Should contain all Header elements', async function () {
 
-        loginPage.emailFld.sendKeys('tester@test.com')
-        loginPage.passwordFld.sendKeys('password')
-        loginPage.submitBtn.click()
+       await loginPage.emailFld.sendKeys('tester@test.com')
+       await loginPage.passwordFld.sendKeys('password')
+       await loginPage.submitBtn.click()
 
-        expect(headerPage.headerTitle.isDisplayed()).toBe(true)
-        expect(headerPage.headerTitle.getText()).toEqual('Superhero Roster')
+       await expect(headerPage.headerTitle.isDisplayed()).toBe(true)
+       await expect(headerPage.headerTitle.getText()).toEqual('Superhero Roster')
 
-        expect(headerPage.headerImage.isDisplayed()).toBe(true)
+       await expect(headerPage.headerImage.isDisplayed()).toBe(true)
 
-        expect(headerPage.headerBody.isDisplayed()).toBe(true)
-        expect(headerPage.headerBody.getText()).toEqual(
+       await expect(headerPage.headerBody.isDisplayed()).toBe(true)
+       await expect(headerPage.headerBody.getText()).toEqual(
         'Imagine That you are tasked with building a team of SuperHeros of save the world. We have given you a few heroes to start with. Add as many heroes as you would like to round out your dream team')
     })
 
