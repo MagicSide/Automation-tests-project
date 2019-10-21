@@ -25,66 +25,66 @@ describe('Vote Page', function (){
 
     it('should display all elements for voting section', function(){
 
-        loginPage.emailFld.sendKeys('tester@test.com')
-        loginPage.passwordFld.sendKeys('password')
-        loginPage.submitBtn.click()
+        loginPage.emailFld.sendKeys('tester@test.com');
+        loginPage.passwordFld.sendKeys('password');
+        loginPage.submitBtn.click();
 
-        expect(votePage.voteTitleTxt.isDisplayed()).toBe(true)
-        expect(votePage.voteTitleTxt.getText()).toEqual('Vote for your favorite Superhero movie')
+        expect(votePage.voteTitleTxt.isDisplayed()).toBe(true);
+        expect(votePage.voteTitleTxt.getText()).toEqual('Vote for your favorite Superhero movie');
 
-        expect(votePage.xmenChoiceRadLbl.isDisplayed()).toBe(true)
-        expect(votePage.xmenChoiceRadLbl.getText()).toEqual('X-Men')
+        expect(votePage.xmenChoiceRadLbl.isDisplayed()).toBe(true);
+        expect(votePage.xmenChoiceRadLbl.getText()).toEqual('X-Men');
 
-        expect(votePage.avengersChoiceRadLbl.isDisplayed()).toBe(true)
-        expect(votePage.avengersChoiceRadLbl.getText()).toEqual('Avengers')
+        expect(votePage.avengersChoiceRadLbl.isDisplayed()).toBe(true);
+        expect(votePage.avengersChoiceRadLbl.getText()).toEqual('Avengers');
 
-        expect(votePage.deadpoolChoiceRadLbl.isDisplayed()).toBe(true)
-        expect(votePage.deadpoolChoiceRadLbl.getText()).toEqual('Deadpool')
+        expect(votePage.deadpoolChoiceRadLbl.isDisplayed()).toBe(true);
+        expect(votePage.deadpoolChoiceRadLbl.getText()).toEqual('Deadpool');
         
-        expect(votePage.spidermanChoiceRadLbl.isDisplayed()).toBe(true)
-        expect(votePage.spidermanChoiceRadLbl.getText()).toEqual('Spider-Man Homecoming')
+        expect(votePage.spidermanChoiceRadLbl.isDisplayed()).toBe(true);
+        expect(votePage.spidermanChoiceRadLbl.getText()).toEqual('Spider-Man Homecoming');
 
-        expect(votePage.ironManChoiceRadLbl.isDisplayed()).toBe(true)
-        expect(votePage.ironManChoiceRadLbl.getText()).toEqual('Iron man')
+        expect(votePage.ironManChoiceRadLbl.isDisplayed()).toBe(true);
+        expect(votePage.ironManChoiceRadLbl.getText()).toEqual('Iron man');
 
-        expect(votePage.submitBtn.isDisplayed()).toBe(true)
-        expect(votePage.submitBtn.getText()).toEqual('Submit')
+        expect(votePage.submitBtn.isDisplayed()).toBe(true);
+        expect(votePage.submitBtn.getText()).toEqual('Submit');
 
-        expect(votePage.movieLbl.isDisplayed()).toBe(true)
-        expect(votePage.movieLbl.getText()).toEqual('Movie')
+        expect(votePage.movieLbl.isDisplayed()).toBe(true);
+        expect(votePage.movieLbl.getText()).toEqual('Movie');
 
-        expect(votePage.voteLbl.isDisplayed()).toBe(true)
-        expect(votePage.voteLbl.getText()).toEqual('Votes')
+        expect(votePage.voteLbl.isDisplayed()).toBe(true);
+        expect(votePage.voteLbl.getText()).toEqual('Votes');
 
-        expect(votePage.xmenLbl.isDisplayed()).toBe(true)
-        expect(votePage.xmenLbl.getText()).toEqual('X-Men')
+        expect(votePage.xmenLbl.isDisplayed()).toBe(true);
+        expect(votePage.xmenLbl.getText()).toEqual('X-Men');
 
-        expect(votePage.xmanVal.isDisplayed()).toBe(true)
-        expect(votePage.xmanVal.getText()).toEqual('10')
+        expect(votePage.xmanVal.isDisplayed()).toBe(true);
+        expect(votePage.xmanVal.getText()).toEqual('10');
 
-        expect(votePage.avengersLbl.isDisplayed()).toBe(true)
-        expect(votePage.avengersLbl.getText()).toEqual('Avengers')
+        expect(votePage.avengersLbl.isDisplayed()).toBe(true);
+        expect(votePage.avengersLbl.getText()).toEqual('Avengers');
 
-        expect(votePage.avengersVal.isDisplayed()).toBe(true)
-        expect(votePage.avengersVal.getText()).toEqual('5')
+        expect(votePage.avengersVal.isDisplayed()).toBe(true);
+        expect(votePage.avengersVal.getText()).toEqual('5');
 
-        expect(votePage.deadpoolLbl.isDisplayed()).toBe(true)
-        expect(votePage.deadpoolLbl.getText()).toEqual('Deadpool')
+        expect(votePage.deadpoolLbl.isDisplayed()).toBe(true);
+        expect(votePage.deadpoolLbl.getText()).toEqual('Deadpool');
 
-        expect(votePage.deadpoolVal.isDisplayed()).toBe(true)
-        expect(votePage.deadpoolVal.getText()).toEqual('22')
+        expect(votePage.deadpoolVal.isDisplayed()).toBe(true);
+        expect(votePage.deadpoolVal.getText()).toEqual('22');
 
-        expect(votePage.spidermanLbl.isDisplayed()).toBe(true)
-        expect(votePage.spidermanLbl.getText()).toEqual('Spider-Man')
+        expect(votePage.spidermanLbl.isDisplayed()).toBe(true);
+        expect(votePage.spidermanLbl.getText()).toEqual('Spider-Man');
 
-        expect(votePage.spidermanVal.isDisplayed()).toBe(true)
-        expect(votePage.spidermanVal.getText()).toEqual('12')
+        expect(votePage.spidermanVal.isDisplayed()).toBe(true);
+        expect(votePage.spidermanVal.getText()).toEqual('12');
 
-        expect(votePage.ironManLbl.isDisplayed()).toBe(true)
-        expect(votePage.ironManLbl.getText()).toEqual('Iron man')
+        expect(votePage.ironManLbl.isDisplayed()).toBe(true);
+        expect(votePage.ironManLbl.getText()).toEqual('Iron man');
 
-        expect(votePage.ironManVal.isDisplayed()).toBe(true)
-        expect(votePage.ironManVal.getText()).toEqual('1')
+        expect(votePage.ironManVal.isDisplayed()).toBe(true);
+        expect(votePage.ironManVal.getText()).toEqual('1');
 
     })
     
