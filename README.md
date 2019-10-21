@@ -1,6 +1,6 @@
 # Automation-tests-project
 
-<h2> Superhero </h2> 
+<h2> Super Heroes </h2> 
 <pre>
 Web-page project about superhero Marvel's films 
 This project used HTML_CSS_JavaScript and Bootstrap 
