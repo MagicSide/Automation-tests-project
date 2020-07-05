@@ -25,4 +25,4 @@ Automation tests coverage
 4. Header page
     √ Should contain all Header elements
     √ should display alert for not found
-    √ Search elements and alert for found
+    √ Search elements and alert for found 
