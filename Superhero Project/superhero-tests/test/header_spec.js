@@ -33,14 +33,14 @@ describe('Header Page', function () {
 
         
         expect(headerPage.headerTitle.isDisplayed()).toBe(true);
-        expect(headerPage.headerTitle.getText()).toEqual('Superhero Roster')
+        expect(headerPage.headerTitle.getText()).toEqual('Superhero Roster');
         
-        expect(headerPage.headerImage.isDisplayed()).toBe(true)
+        expect(headerPage.headerImage.isDisplayed()).toBe(true);
 
         expect(headerPage.headerBody.isDisplayed()).toBe(true);
         expect(headerPage.headerBody.getText()).toEqual(
         'Imagine That you are tasked with building a team of SuperHeros of save the world. We have given you a few heroes to start with. Add as many heroes as you would like to round out your dream team')
-    })
+    });
 
 
 
