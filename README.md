@@ -10,3 +10,4 @@ Used Protractor/JavaScript
 Used Page Object patterns
 Used Xpath and CSS selectors for find elements 
 Add Jasmine reports with screenshots </pre>
+Test
